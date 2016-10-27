@@ -14,9 +14,11 @@ var fs = require('fs');
 
 var SF_MODULES_BASEFOLDER = __dirname + "/clients/sfui-composer/sf-modules/";
 
-app.get('/', function (req, res) {
-	res.send('<h1>Hello world</h1>');
-});
+// app.get('/', function (req, res) {
+// 	res.send('<h1>Hello world</h1>');
+// });
+app.use('/', express.static(__dirname + '/index.html' /*, { maxAge: oneDay }*/ ));
+
 
 var oneDay = 86400000;
 
@@ -25,7 +27,7 @@ var oneDay = 86400000;
 // console.log('/sfui/composer\t\t=\t'+ __dirname +'/clients/sfui-composer');
 // console.log('/sfui/demos/calculator\t=\t'+__dirname + '/clients/demos/calculator');
 
-app.use('/sfui/demos/calculator', express.static(__dirname + '/clients/demos/calculator' /*, { maxAge: oneDay }*/ ));
+app.use('/demos/calculator', express.static(__dirname + '/demos/calculator' /*, { maxAge: oneDay }*/ ));
 
 
 
@@ -93,6 +95,6 @@ io.on('connection', function (socket) {
 	});
 });
 
-http.listen(4000, function () {
-	console.log('listening on *:4000');
+http.listen(process.env.PORT || 4000, function () {
+	console.log('listening on port ',process.env.PORT);
 });
