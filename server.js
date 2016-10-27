@@ -25,7 +25,7 @@ var oneDay = 86400000;
 // console.log('/sfui/composer\t\t=\t'+ __dirname +'/clients/sfui-composer');
 // console.log('/sfui/demos/calculator\t=\t'+__dirname + '/clients/demos/calculator');
 
-app.use('/sfui/demos/calculator', express.static(__dirname + '/clients/demos/calculator' /*, { maxAge: oneDay }*/ ));
+app.use('/demos/calculator', express.static(__dirname + '/demos/calculator' /*, { maxAge: oneDay }*/ ));
 
 
 
