@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>StateFlow Composer</title>
+		<meta name="description" content="If you like this visualization, check out the source at https://github.com/marmelab/ArchitectureTree and make your own!">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"></link>
+
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/socket.io-client/socket.io.js"></script>
+		<script src="node_modules/clone/clone.js"></script>
+
+		<!-- <script src="js/modules/stateFlow.js"></script>
+		<script src="js/modules/sf-ui.js"></script> -->
+		<script src="node_modules/st8flo/stateFlow.js"></script>
+		<script src="node_modules/st8flo/sf-ui.js"></script>
+		<script src="js/app.js"></script>
+
+
+	</head>
+	<body ng-app='sf_calculator'>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-4 col-xs-offset-4">
+					<div ng-controller="calculator_controller">
+						<textarea cols=55 rows=1 ng-model="content"></textarea>
+						<input type="text" ng-model="operand1"></input>
+						<input type="text" ng-model="operand2"></input>
+						<div class="row">
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('1')">1</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('2')">2</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('3')">3</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('C')">C</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('4')">4</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('5')">5</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('6')">6</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('+')">+</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('7')">7</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('8')">8</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('9')">9</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('*')">*</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('0')">0</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('.')">.</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('-')">-</button>
+							</div>
+							<div class="col-xs-3 text-center">
+								<button class="btn btn-default" ng-click="keyPress('=')">=</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
