@@ -18,6 +18,7 @@ var SF_MODULES_BASEFOLDER = __dirname + "/clients/sfui-composer/sf-modules/";
 // 	res.send('<h1>Hello world</h1>');
 // });
 app.get('/', express.static(__dirname +'/www/' /*, { maxAge: oneDay }*/ ));
+app.get('/bootstrap', express.static(__dirname +'/www/bootstrap/dist/' /*, { maxAge: oneDay }*/ ));
 
 var oneDay = 86400000;
 
