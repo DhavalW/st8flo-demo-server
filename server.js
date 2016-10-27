@@ -93,6 +93,6 @@ io.on('connection', function (socket) {
 	});
 });
 
-http.listen(PORT, function () {
-	console.log('listening on port ',PORT);
+http.listen(process.env.PORT || 4000, function () {
+	console.log('listening on port ',process.env.PORT);
 });
