@@ -28,6 +28,7 @@ var oneDay = 86400000;
 
 app.use('/demos/calculator', express.static(__dirname + '/www/demos/calculator' /*, { maxAge: oneDay }*/ ));
 app.use('/static', express.static(__dirname + '/www/static' /*, { maxAge: oneDay }*/ ));
+app.use('/node_modules', express.static(__dirname + '/www/node_modules' /*, { maxAge: oneDay }*/ ));
 
 
 

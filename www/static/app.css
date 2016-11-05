@@ -1,0 +1,15 @@
+.row.jumbotron {
+	padding:0em;
+	margin-top:5em;
+	margin-bottom:2em;
+	min-height:10em;
+}
+
+.sf-image {
+	margin-top:0em;
+	margin-bottom:0em;
+}
+
+.sf-text {
+	padding:2em;
+}
