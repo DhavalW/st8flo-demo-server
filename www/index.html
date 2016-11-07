@@ -20,7 +20,7 @@
 	<body ng-controller="mainController">
 		<div class="container-fluid">
 
-			<div ng-show="showing.devStory">
+			<div ng-if="showing.devStory">
 				<div class="row jumbotron">
 					<div class="col-sm-8 col-sm-offset-2 sf-text">
 						<div class="text-center">
@@ -98,7 +98,7 @@
 				</div>
 			</div>
 
-			<div ng-show="showing.problemStatement">
+			<div ng-if="showing.problemStatement">
 				<div class="row jumbotron">
 					<div class="col-sm-8 col-sm-offset-2 sf-text">
 						<div class="text-center">
@@ -137,7 +137,7 @@
 				</div>
 			</div> -->
 
-			<div ng-show="showing.st8floIntro">
+			<div ng-if="showing.st8floIntro">
 				<div class="row jumbotron">
 					<div class="col-sm-8 col-sm-offset-2 sf-text">
 						<div class="text-center">
@@ -188,7 +188,7 @@
 				</div>
 			</div>
 
-			<div ng-show="showing.benefits">
+			<div ng-if="showing.benefits">
 				<div class="row jumbotron" >
 					<div class="col-sm-8 sf-image">
 						<img class="img-responsive " src="static/understand_L.gif"></img>
@@ -231,7 +231,7 @@
 					</div>
 					<div class="col-sm-4 sf-text" >
 						<div class="text-right">
-							<h2>Simplify app state management and design</h2>
+							<h2>Visualise & simplify app state management and design</h2>
 							<br><h4><i>State management gets tricky in a complex application, becausing keeping a track of multiple states & their impacts to the flow of execution is hard to do mentally or by memory.
 							<br><br>Fortunately, St8Flo handles that for you automatically, allowing you to focus on getting it right</i></h4>
 						</div>
@@ -244,7 +244,7 @@
 						<div class="text-left">
 							<h2>Collaborate more intuitively across teams</h2>
 							<br><h4><i>Software is often designed by teams, rather than a single developer.
-							<br><br>St8Flo enables you to <b>show, discuss and edit modifications directly on the flowchart, together with your team, in real time</b>... allowing for a more rapid, intuitive collaboration effort.
+							<br><br>St8Flo enables you to <b>show, discuss and edit modifications directly on the flowchart, in real time, </b>together with your team... allowing for a more rapid, intuitive collaboration effort.
 						</div>
 					</div>
 					<div class="col-sm-8 sf-image">
@@ -313,7 +313,7 @@
 			</div>
 
 
-			<div ng-show="showing.keyFeatures">
+			<div ng-if="showing.keyFeatures">
 				<div class="row jumbotron">
 					<div class="col-sm-8 col-sm-offset-2 sf-text">
 						<div class="text-center">
@@ -357,7 +357,7 @@
 				<div class="row jumbotron">
 					<div class="col-sm-6 sf-text">
 						<div class="text-left">
-							<br><br><h2>Distribute app execution, over multiple browsers / devices</h2>
+							<br><br><h2>Distribute app execution over multiple browsers / devices</h2>
 							<br><h4><i></i></h4>
 						</div>
 					</div>
