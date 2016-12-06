@@ -15,18 +15,38 @@
 }
 
 .container-fluid {
-	background: url('code2.jpg') repeat-y fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+body {
+	background: url('code1.jpg') repeat-y fixed;
 	background-size: cover;
+}
+
+.jumbotron {
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .problem-statement{
 	/*background: url('code2.jpg');*/
 	/*background-color: rgba(255, 255, 255, 0.8);*/
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.5);
 	background-size: cover;
-	min-height:100%;
+	height:40em;
 }
 
 .problem-statement h1, .problem-statement h2{
+	color:white;
+}
+.solution-statement{
+	/*background: url('code2.jpg');*/
+	/*background-color: rgba(255, 255, 255, 0.8);*/
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	height:40em;
+}
+
+.solution-statement h1, .solution-statement h2, .solution-statement h3{
 	color:white;
 }
