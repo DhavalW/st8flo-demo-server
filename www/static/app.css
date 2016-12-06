@@ -13,3 +13,20 @@
 .sf-text {
 	padding:2em;
 }
+
+.container-fluid {
+	background: url('code2.jpg') repeat-y fixed;
+	background-size: cover;
+}
+
+.problem-statement{
+	/*background: url('code2.jpg');*/
+	/*background-color: rgba(255, 255, 255, 0.8);*/
+	background-color: rgba(0, 0, 0, 0.8);
+	background-size: cover;
+	min-height:100%;
+}
+
+.problem-statement h1, .problem-statement h2{
+	color:white;
+}
