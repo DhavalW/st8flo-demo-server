@@ -41,7 +41,7 @@ body {
 	/*background-color: rgba(255, 255, 255, 0.8);*/
 	background-color: rgba(0, 0, 0, 0.5);
 	background-size: contain;
-	height:35em;
+	height:40em;
 }
 
 .problem-statement h1, .problem-statement h2{
@@ -52,7 +52,7 @@ body {
 	/*background-color: rgba(255, 255, 255, 0.8);*/
 	background-color: rgba(0, 0, 0, 0.5);
 	background-size: contain;
-	height:35em;
+	min-height:40em;
 }
 
 .solution-statement h1, .solution-statement h2, .solution-statement h3{
