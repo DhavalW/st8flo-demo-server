@@ -19,7 +19,7 @@ function calculator_controller($q,$scope,$http,stateFlowService,sfui_service,SER
 
 	// Create & attach the remote connector to SF runtime
 	window.StateFlow.sfUI = new sfui_service.SFUI();
-	// window.StateFlow.sfUI.attachTo(window.StateFlow.sf_calculator,SERVER_URL);
+	//window.StateFlow.sfUI.attachTo(window.StateFlow.sf_calculator,SERVER_URL);
 	window.StateFlow.sfUI.attachTo(window.StateFlow.sf_calculator,null);
 
 
